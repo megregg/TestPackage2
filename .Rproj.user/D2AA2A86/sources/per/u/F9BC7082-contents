@@ -1,0 +1,17 @@
+library("devtools")
+library("roxygen2")
+setwd("C:/Users/Mary/Desktop/Test")
+
+##
+## create package
+create_package("htest.clust")
+
+build("TestPackage2")
+install("TestPackage2")
+library("TestPackage2")
+
+
+## document the functions
+## (only have to do this when I first add or update functions)
+setwd("C:/Users/Mary/Desktop/Test/TestPackage2")
+document()

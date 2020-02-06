@@ -1,0 +1,21 @@
+###############################################
+## Commands for creating htest.clust package
+###############################################
+
+library("devtools")
+library("roxygen2")
+setwd("C:/Users/Mary/Desktop/School/UofL/1Dissertation/htest.clust/R Package")
+
+##
+## create package
+create_package("htest.clust")
+
+build("htest.clust")
+install("htest.clust")
+library("htest.clust")
+
+
+## document the functions
+## (only have to do this when I first add or update functions)
+setwd("C:/Users/Mary/Desktop/School/UofL/1Dissertation/htest.clust/R Package/htest.clust")
+document()
